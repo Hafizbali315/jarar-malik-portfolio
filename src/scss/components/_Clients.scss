@@ -1,8 +1,12 @@
 .clients {
 	margin-top: 250px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
 
 	.content {
 		margin-top: 100px;
+		z-index: 99;
 
 		.client_card {
 			width: 100%;
@@ -41,6 +45,12 @@
 				background-size: contain;
 			}
 		}
+	}
+
+	.client_right_bg {
+		position: absolute;
+		top: 200px;
+		right: -300px;
 	}
 }
 
@@ -120,6 +130,12 @@
 					height: 27px;
 				}
 			}
+		}
+
+		.client_right_bg {
+			position: absolute;
+			top: 50px;
+			right: -150px;
 		}
 	}
 }

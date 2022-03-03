@@ -1,8 +1,14 @@
+import ClientRightLg from '../assets/ClientRightLg.png'
+
 const Clients = () => {
 	return (
 		<div className="clients" id="clients">
 			<div className="container">
 				<h1>CLIENTS</h1>
+
+				<div className="client_right_bg">
+					<img src={ClientRightLg} alt="ClientRightLg" />
+				</div>
 
 				<div className="content">
 					<div className="row">
