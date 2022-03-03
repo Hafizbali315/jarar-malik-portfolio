@@ -6,6 +6,14 @@
 
 .App {
 	background: #121019;
+
+	&::-webkit-scrollbar {
+		width: 2px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #f1f1f1;
+	}
 }
 
 h1 {
@@ -21,8 +29,25 @@ h2 {
 
 p {
 	font-family: 'Gotham', sans-serif;
+	margin: 0;
 }
 
 ul {
 	padding: 0;
+}
+
+@include desktop-screen {
+	h1 {
+		font-size: 50px;
+	}
+}
+@include laptop-screen {
+	h1 {
+		font-size: 40px;
+	}
+}
+@include tablet-screen {
+	h1 {
+		font-size: 30px;
+	}
 }
