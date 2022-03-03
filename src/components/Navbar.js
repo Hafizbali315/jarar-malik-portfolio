@@ -5,7 +5,6 @@ import LogoWhite from '../assets/LogoWhite.png'
 import { FaDribbbleSquare, FaBehanceSquare, FaTelegramPlane, FaInstagram } from 'react-icons/fa'
 import { BsDiscord } from 'react-icons/bs'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { MdCancel } from 'react-icons/md'
 
 const Navbar = () => {
 	const [showSidebar, setShowSidebar] = useState()
