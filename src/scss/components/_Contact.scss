@@ -1,0 +1,143 @@
+.contact {
+	margin-top: 250px;
+	padding-bottom: 100px;
+
+	.content {
+		display: flex;
+		margin-top: 40px;
+
+		p {
+			font-family: 'Downey-Light';
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 42px;
+			color: #fff;
+		}
+
+		.left {
+			width: 50%;
+
+			.input_container {
+				input {
+					width: 100%;
+					border: none;
+					outline: none;
+					border-bottom: 1px solid #fff;
+					background: transparent;
+					padding: 10px 0;
+
+					font-family: 'Downey-Light';
+					font-weight: 300;
+					font-size: 16px;
+					color: #fff;
+					margin-top: 20px;
+				}
+			}
+
+			button {
+				background-color: rgba(255, 255, 255, 0.1);
+				padding: 10px 20px;
+				border-radius: 5px;
+				margin-top: 20px;
+				border: none;
+				color: #fff;
+			}
+		}
+
+		.right {
+			width: 50%;
+			text-align: right;
+
+			ul {
+				list-style: none;
+				margin-top: 30px;
+				display: flex;
+				justify-content: flex-end;
+				gap: 16px;
+
+				li {
+					a {
+						text-decoration: none;
+
+						.icon {
+							font-size: 30px;
+							color: rgba(255, 255, 255, 0.4);
+						}
+
+						&:hover {
+							.icon {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include tablet-screen {
+	.contact {
+		margin-top: 100px;
+		padding-bottom: 100px;
+
+		h1 {
+			text-align: center;
+		}
+
+		.content {
+			display: flex;
+			gap: 50px;
+			flex-direction: column-reverse;
+			margin-top: 30px;
+
+			p {
+				font-size: 18px;
+				text-align: center;
+			}
+
+			.left {
+				width: 100%;
+
+				form {
+					text-align: right;
+
+					.input_container {
+						input {
+							width: 100%;
+							padding: 10px 0;
+
+							font-size: 16px;
+							margin-top: 20px;
+						}
+					}
+
+					button {
+						background-color: rgba(255, 255, 255, 0.1);
+						padding: 10px 20px;
+						margin-top: 20px;
+					}
+				}
+			}
+
+			.right {
+				width: 100%;
+				text-align: center;
+
+				ul {
+					margin-top: 20px;
+					justify-content: center;
+					gap: 15px;
+
+					li {
+						a {
+							.icon {
+								font-size: 25px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

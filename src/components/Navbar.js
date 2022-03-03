@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import LogoWhite from '../assets/LogoWhite.png'
 
-import { FaDribbbleSquare, FaBehanceSquare, FaTelegramPlane, FaInstagram } from 'react-icons/fa'
+import { FaLinkedinIn, FaBehanceSquare, FaTelegramPlane, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { BsDiscord } from 'react-icons/bs'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
@@ -34,32 +34,38 @@ const Navbar = () => {
 
 					<ul className="social_links">
 						<li>
-							<a href="#dribble">
-								<FaDribbbleSquare className="icon" />
+							<a href="https://www.linkedin.com/in/jarar-nazar/" target="_blank" rel="noreferrer">
+								<FaLinkedinIn className="icon" />
 							</a>
 						</li>
 
 						<li>
-							<a href="#behance">
+							<a href="https://www.behance.net/Jararjerry51ba" target="_blank" rel="noreferrer">
 								<FaBehanceSquare className="icon" />
 							</a>
 						</li>
 
 						<li>
-							<a href="#instagram">
+							<a href="https://www.instagram.com/jararmalik95/" target="_blank" rel="noreferrer">
 								<FaInstagram className="icon" />
 							</a>
 						</li>
 
 						<li>
-							<a href="#telegram">
+							<a href="https://telegram.me/JayForeJessi" target="_blank" rel="noreferrer">
 								<FaTelegramPlane className="icon" />
 							</a>
 						</li>
 
 						<li>
-							<a href="#discord">
+							<a href="https://discord.com/channels/808234830579499009" target="_blank" rel="noreferrer">
 								<BsDiscord className="icon" />
+							</a>
+						</li>
+
+						<li>
+							<a href="https://twitter.com/JararMalik" target="_blank" rel="noreferrer">
+								<FaTwitter className="icon" />
 							</a>
 						</li>
 					</ul>
@@ -99,32 +105,38 @@ const Navbar = () => {
 								<li>
 									<ul className="mb_social_links">
 										<li>
-											<a href="#dribble">
-												<FaDribbbleSquare className="icon" />
+											<a href="https://www.linkedin.com/in/jarar-nazar/" target="_blank" rel="noreferrer">
+												<FaLinkedinIn className="icon" />
 											</a>
 										</li>
 
 										<li>
-											<a href="#behance">
+											<a href="https://www.behance.net/Jararjerry51ba" target="_blank" rel="noreferrer">
 												<FaBehanceSquare className="icon" />
 											</a>
 										</li>
 
 										<li>
-											<a href="#instagram">
+											<a href="https://www.instagram.com/jararmalik95/" target="_blank" rel="noreferrer">
 												<FaInstagram className="icon" />
 											</a>
 										</li>
 
 										<li>
-											<a href="#telegram">
+											<a href="https://telegram.me/JayForeJessi" target="_blank" rel="noreferrer">
 												<FaTelegramPlane className="icon" />
 											</a>
 										</li>
 
 										<li>
-											<a href="#discord">
+											<a href="https://discord.com/channels/808234830579499009" target="_blank" rel="noreferrer">
 												<BsDiscord className="icon" />
+											</a>
+										</li>
+
+										<li>
+											<a href="https://twitter.com/JararMalik" target="_blank" rel="noreferrer">
+												<FaTwitter className="icon" />
 											</a>
 										</li>
 									</ul>
