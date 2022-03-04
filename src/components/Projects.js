@@ -4,6 +4,7 @@ import EularImg from '../assets/EularImg.png'
 import EularCardBg from '../assets/EularCardBg.png'
 import EularHoverImg from '../assets/EularHoverImg.png'
 import ProjectImg from '../assets/ProjectImg.png'
+import ProjectsRingImg from '../assets/ProjectsRingImg.png'
 
 const Projects = () => {
 	const [showProjectDetails, setShowProjectDetails] = useState(false)
@@ -47,7 +48,11 @@ const Projects = () => {
 	]
 
 	return (
-		<div className="projects" id="projects">
+		<div className="projects">
+			<div className="ring_img_sm">
+				<img src={ProjectsRingImg} alt="ProjectsRingImg" />
+			</div>
+
 			<div className="container">
 				<h1>PROJECTS</h1>
 

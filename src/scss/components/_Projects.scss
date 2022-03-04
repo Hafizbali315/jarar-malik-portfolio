@@ -3,6 +3,21 @@
 	position: relative;
 	overflow-x: hidden;
 
+	.ring_img_sm {
+		position: absolute;
+		display: none;
+		top: 30%;
+		left: -200px;
+		width: 369.91px;
+		height: 369.91px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
 	.content {
 		.projects_row {
 			margin-top: 100px;
@@ -157,7 +172,6 @@
 		}
 	}
 }
-
 @include desktop-screen {
 	.projects {
 		margin-top: 250px;
@@ -263,6 +277,9 @@
 
 @include tablet-screen {
 	.projects {
+		.ring_img_sm {
+			display: block;
+		}
 		h1 {
 			text-align: center;
 		}
@@ -311,6 +328,7 @@
 		}
 
 		.popup {
+			margin: 0;
 			.project_details {
 				max-height: calc(100% - 200px);
 				h1 {
