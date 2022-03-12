@@ -53,6 +53,10 @@ const Projects = () => {
 				<img src={ProjectsRingImg} alt="ProjectsRingImg" />
 			</div>
 
+			<div className="ring_img_lg">
+				<img src={ProjectsRingImg} alt="ProjectsRingImg" />
+			</div>
+
 			<div className="container">
 				<h1>PROJECTS</h1>
 

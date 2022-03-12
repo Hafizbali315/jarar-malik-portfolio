@@ -1,5 +1,14 @@
+@keyframes rotate_img {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
 .projects {
-	margin-top: 250px;
+	padding-top: 300px;
 	position: relative;
 	overflow-x: hidden;
 
@@ -10,6 +19,7 @@
 		left: -200px;
 		width: 369.91px;
 		height: 369.91px;
+		animation: rotate_img 4s infinite linear;
 
 		img {
 			width: 100%;
@@ -18,7 +28,21 @@
 		}
 	}
 
+	.ring_img_lg {
+		position: absolute;
+		top: 150px;
+		right: -200px;
+		animation: rotate_img 4s infinite linear;
+
+		img {
+			width: 500px;
+			height: 500px;
+		}
+	}
+
 	.content {
+		border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+
 		.projects_row {
 			margin-top: 100px;
 			display: flex;
@@ -26,18 +50,22 @@
 			overflow-x: scroll;
 			-ms-overflow-style: none;
 			scrollbar-width: none;
-			width: 100vw;
+			padding-right: 150px;
+			width: 100%;
+			min-width: 95vw;
+			padding-bottom: 40px;
 
 			&::-webkit-scrollbar {
 				display: none;
 			}
 
 			.project {
-				min-width: 37%;
-				height: 350px;
+				min-width: 550px;
+				width: auto;
+				height: 340px;
 				border-radius: 15px;
 				background: transparent;
-				border: 0.5px solid #fff;
+				border: 0.5px solid rgba(255, 255, 255, 0.2);
 				backdrop-filter: blur(30px);
 				--webkit-backdrop-filter: blur(30px);
 				background-color: rgba(255, 255, 255, 0.1);
@@ -126,13 +154,13 @@
 		display: flex;
 		align-items: center;
 		margin: -8px;
-		top: 0;
+		top: 50px;
 
 		.project_details {
 			width: 100%;
 			max-height: calc(100% - 200px);
 			background: transparent;
-			border: 0.5px solid #fff;
+			border: 0.5px solid rgba(255, 255, 255, 0.2);
 			backdrop-filter: blur(50px);
 			--webkit-backdrop-filter: blur(50px);
 			background-color: rgba(255, 255, 255, 0.1);
@@ -183,7 +211,7 @@
 
 				.project {
 					min-width: 35%;
-					height: 350px;
+					height: 300px;
 
 					.eular_img {
 						width: 350px;
@@ -280,6 +308,11 @@
 		.ring_img_sm {
 			display: block;
 		}
+
+		.ring_img_lg {
+			display: none;
+		}
+
 		h1 {
 			text-align: center;
 		}
@@ -291,6 +324,10 @@
 				gap: 30px;
 				flex-direction: column;
 				width: 100%;
+				padding: 0;
+
+				width: 100%;
+				min-width: 100%;
 
 				.project {
 					min-width: 35%;

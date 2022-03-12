@@ -4,7 +4,7 @@ const Clients = () => {
 	return (
 		<div className="clients" id="clients">
 			<div className="container">
-				<h1>CLIENTS</h1>
+				<h1>Client list</h1>
 
 				<div className="client_right_bg">
 					<img src={ClientRightLg} alt="ClientRightLg" />

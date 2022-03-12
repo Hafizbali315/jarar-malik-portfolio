@@ -1,22 +1,36 @@
+@keyframes left_right {
+	0% {
+		right: -100px;
+	}
+	50% {
+		right: -150px;
+	}
+	100% {
+		right: -100px;
+	}
+}
+
 .about {
-	margin-top: 200px;
+	padding-top: 200px;
 
 	.content_row {
 		margin-top: 100px;
 		display: flex;
 		align-items: center;
 		position: relative;
+		width: 75%;
 
 		.content_card {
 			color: #fff;
-			width: 75%;
+			width: 100%;
 			padding: 30px;
 			border-radius: 15px;
 			background: transparent;
-			border: 0.5px solid #fff;
+			border: 0.5px solid rgba(255, 255, 255, 0.2);
 			backdrop-filter: blur(30px);
 			--webkit-backdrop-filter: blur(30px);
 			background-color: rgba(255, 255, 255, 0.1);
+			z-index: 9;
 
 			p {
 				font-family: 'Gotham';
@@ -33,10 +47,13 @@
 		}
 
 		.circle {
+			position: absolute;
+			right: -150px;
 			max-width: 25%;
 			width: 200px;
 			height: 200px;
 			margin-left: -70px;
+			animation: left_right 5s linear infinite;
 
 			img {
 				width: 100%;
@@ -69,15 +86,22 @@
 		text-align: center;
 		overflow-x: hidden;
 
+		h1 {
+			.about_span {
+				display: block;
+			}
+		}
+
 		.content_row {
 			margin-top: 30px;
 			position: relative;
+			width: 100%;
 
 			.content_card {
 				width: 100%;
 				padding: 25px 30px;
 				border-radius: 15px;
-				z-index: 2;
+				z-index: 9;
 				height: 100%;
 				margin-bottom: 150px;
 

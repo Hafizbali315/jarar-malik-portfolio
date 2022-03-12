@@ -24,6 +24,8 @@
 			}
 
 			.learn_more {
+				z-index: 2;
+
 				width: 249.52px;
 				height: 80px;
 				margin-top: 60px;
@@ -51,7 +53,7 @@
 
 				height: 200px;
 				background: transparent;
-				border: 0.5px solid #fff;
+				border: 0.5px solid rgba(255, 255, 255, 0.2);
 				backdrop-filter: blur(30px);
 				--webkit-backdrop-filter: blur(30px);
 				background-color: rgba(255, 255, 255, 0.1);

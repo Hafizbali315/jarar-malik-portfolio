@@ -22,7 +22,6 @@ export const FirstCircleAnimationSm = {
 		transition: {
 			repeat: Infinity,
 			type: 'spring',
-			ease: 'linear',
 			duration: 4,
 		},
 	},
