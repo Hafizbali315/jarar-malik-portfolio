@@ -19,8 +19,13 @@
 h1 {
 	font-family: 'Downey', sans-serif;
 	font-size: 60px;
+	line-height: 120%;
 	font-weight: bold;
 	color: #fff;
+
+	span {
+		font-family: 'Gotham';
+	}
 }
 
 h2 {

@@ -14,11 +14,13 @@
 		gap: 50px;
 
 		.left_col {
-			h2 {
-				font-family: 'Downey';
-				font-weight: bold;
-				font-size: 40px;
-				color: #fff;
+			width: 60%;
+
+			h1 {
+				span {
+					font-family: 'Gotham';
+					text-transform: capitalize;
+				}
 			}
 
 			.learn_more {
@@ -36,15 +38,17 @@
 		}
 
 		.right_col {
-			width: 50%;
+			width: 40%;
 			display: flex;
 			gap: 50px;
 			flex-direction: column;
 			justify-content: space-between;
 			position: relative;
+
 			.right_rectangle {
-				min-width: 1400px;
-				width: 100%;
+				max-width: 115%;
+				width: 700px;
+
 				height: 200px;
 				background: transparent;
 				border: 0.5px solid #fff;
@@ -64,6 +68,7 @@
 				text-align: left;
 				color: #fff;
 				margin: 0;
+				margin-left: -80px;
 			}
 
 			.hero_circle {
@@ -141,10 +146,6 @@
 	.header {
 		.hero {
 			.left_col {
-				h2 {
-					font-size: 30px;
-				}
-
 				.learn_more {
 					height: 80px;
 					margin-top: 60px;
