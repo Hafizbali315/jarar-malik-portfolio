@@ -1,21 +1,36 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import LogoWhite from '../assets/LogoWhite.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
 	const [showSidebar, setShowSidebar] = useState()
+	const [navbarBg, setNavbarBg] = useState('')
+
+	const listenScrollEvent = (event) => {
+		if (window.scrollY < 100) {
+			return setNavbarBg('transparent')
+		} else if (window.scrollY > 100) {
+			return setNavbarBg('colored')
+		}
+	}
+
+	useEffect(() => {
+		window.addEventListener('scroll', listenScrollEvent)
+
+		return () => window.removeEventListener('scroll', listenScrollEvent)
+	}, [])
 
 	return (
-		<div className="navbar">
+		<div className={`navbar ${navbarBg}`}>
 			<div className="container">
 				<div className="content">
 					<ul className="lg_page_links">
-						<li className="logo">
+						<div className="logo">
 							<a href="#top">
 								<img src={LogoWhite} alt="logo" />
 							</a>
-						</li>
+						</div>
 
 						<li>
 							<a href="#about">about</a>
