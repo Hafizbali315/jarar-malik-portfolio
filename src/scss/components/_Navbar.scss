@@ -16,27 +16,24 @@
 		width: 100%;
 		position: relative;
 
-		.logo {
-			width: 200px;
-			height: 45px;
-
-			img {
-				width: 100%;
-				height: 100%;
-			}
-		}
-
-		ul {
+		.lg_page_links {
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: space-between;
 			list-style: none;
 			margin: 0;
-		}
+			width: 100%;
 
-		.page_links {
-			margin-left: -100px;
-			gap: 90px;
+			.logo {
+				width: 200px;
+				height: 45px;
+				margin-right: 50px;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
 
 			li {
 				a {
@@ -50,27 +47,6 @@
 					&:hover {
 						text-decoration: underline;
 						color: #fff;
-					}
-				}
-			}
-		}
-
-		.social_links {
-			gap: 16px;
-
-			li {
-				a {
-					text-decoration: none;
-
-					.icon {
-						font-size: 30px;
-						color: rgba(255, 255, 255, 0.4);
-					}
-
-					&:hover {
-						.icon {
-							color: #fff;
-						}
 					}
 				}
 			}
@@ -164,26 +140,11 @@
 @include desktop-screen {
 	.navbar {
 		.content {
-			.page_links {
-				margin-left: -50px;
-				gap: 70px;
-
+			.lg_page_links {
 				li {
 					a {
 						font-weight: 300;
 						font-size: 16px;
-					}
-				}
-			}
-
-			.social_links {
-				gap: 12px;
-
-				li {
-					a {
-						.icon {
-							font-size: 28px;
-						}
 					}
 				}
 			}
@@ -194,26 +155,11 @@
 @include laptop-screen {
 	.navbar {
 		.content {
-			.page_links {
-				margin-left: 0;
-				gap: 50px;
-
+			.lg_page_links {
 				li {
 					a {
 						font-weight: 300;
 						font-size: 15px;
-					}
-				}
-			}
-
-			.social_links {
-				gap: 12px;
-
-				li {
-					a {
-						.icon {
-							font-size: 25px;
-						}
 					}
 				}
 			}
@@ -226,17 +172,16 @@
 		.content {
 			margin: 0 20px;
 
-			.logo {
-				width: 172px;
-				height: 39.93px;
-			}
+			.lg_page_links {
+				li {
+					display: none;
+				}
 
-			.page_links {
-				display: none;
-			}
-
-			.social_links {
-				display: none;
+				.logo {
+					width: 172px;
+					height: 39.93px;
+					display: block;
+				}
 			}
 
 			.hamburger_menu {
