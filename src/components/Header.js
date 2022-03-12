@@ -5,7 +5,7 @@ import { FirstCircleAnimationSm, FirstCircleAnimationLg } from './../animations/
 
 const Header = () => {
 	return (
-		<div className="header">
+		<div className="header" id="header">
 			<Navbar />
 
 			<div className="container">

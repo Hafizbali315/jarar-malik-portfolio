@@ -48,7 +48,7 @@ const Projects = () => {
 	]
 
 	return (
-		<div className="projects">
+		<div className="projects" id="projects">
 			<div className="ring_img_sm">
 				<img src={ProjectsRingImg} alt="ProjectsRingImg" />
 			</div>

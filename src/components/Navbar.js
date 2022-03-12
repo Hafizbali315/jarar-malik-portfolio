@@ -27,7 +27,7 @@ const Navbar = () => {
 				<div className="content">
 					<ul className="lg_page_links">
 						<div className="logo">
-							<a href="#top">
+							<a href="#header">
 								<img src={LogoWhite} alt="logo" />
 							</a>
 						</div>
