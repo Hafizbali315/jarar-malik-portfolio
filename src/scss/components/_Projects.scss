@@ -7,6 +7,15 @@
 	}
 }
 
+@keyframes fade_in_out {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .projects {
 	padding-top: 300px;
 	position: relative;
@@ -19,7 +28,7 @@
 		left: -200px;
 		width: 369.91px;
 		height: 369.91px;
-		animation: rotate_img 4s infinite linear;
+		animation: rotate_img 20s infinite linear;
 
 		img {
 			width: 100%;
@@ -32,7 +41,7 @@
 		position: absolute;
 		top: 150px;
 		right: -200px;
-		animation: rotate_img 4s infinite linear;
+		animation: rotate_img 20s infinite linear;
 
 		img {
 			width: 500px;
@@ -100,6 +109,7 @@
 					color: #fff;
 					padding: 20px 24px;
 					bottom: 0;
+					animation: fade_in_out 0.5s ease-in-out;
 
 					h6 {
 						font-family: 'Downey';
@@ -129,9 +139,11 @@
 
 						width: 100%;
 						height: 100%;
+						animation: fade_in_out 1s ease-in-out;
 
 						img {
 							width: 100%;
+							animation: fade_in_out 1s ease-in-out;
 							height: 100%;
 							object-fit: contain;
 						}
@@ -140,6 +152,7 @@
 					.eular_hover_img {
 						margin-top: -30px;
 						display: block;
+						animation: fade_in_out 1s ease-in-out;
 					}
 				}
 			}

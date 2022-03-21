@@ -13,6 +13,12 @@
 .about {
 	padding-top: 200px;
 
+	h1 {
+		span {
+			font-family: 'Downey-Outline';
+		}
+	}
+
 	.content_row {
 		margin-top: 100px;
 		display: flex;
@@ -53,7 +59,7 @@
 			width: 200px;
 			height: 200px;
 			margin-left: -70px;
-			animation: left_right 5s linear infinite;
+			animation: left_right 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
 			img {
 				width: 100%;

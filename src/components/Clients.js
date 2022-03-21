@@ -1,4 +1,5 @@
 import ClientRightLg from '../assets/ClientRightLg.png'
+import ClientBackgroudHover from '../assets/ClientBackgroudHover.png'
 
 const Clients = () => {
 	return (
@@ -14,61 +15,73 @@ const Clients = () => {
 					<div className="row">
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>
 						<div className="col-lg-3 col-md-4 col-6 g-4">
 							<div className="client_card">
+								<img className="light_bg" src={ClientBackgroudHover} alt="ClientBackgroudHover" />
 								<div className="img_container"></div>
 							</div>
 						</div>

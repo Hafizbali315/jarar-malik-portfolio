@@ -8,7 +8,7 @@ export const FirstCircleAnimationLg = {
 			repeat: Infinity,
 			type: 'spring',
 			ease: 'linear',
-			duration: 4,
+			duration: 5,
 		},
 	},
 }

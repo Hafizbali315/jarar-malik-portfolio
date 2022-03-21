@@ -1,3 +1,12 @@
+@keyframes fade_in_out {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .clients {
 	padding-top: 250px;
 	position: relative;
@@ -24,9 +33,9 @@
 			cursor: pointer;
 
 			&:hover {
-				background-image: url('../../assets/ClientBackgroudHover.png');
-				background-repeat: no-repeat;
-				background-size: cover;
+				// background-image: url('../../assets/ClientBackgroudHover.png');
+				// background-repeat: no-repeat;
+				// background-size: cover;
 
 				.img_container {
 					min-width: 200px;
@@ -36,6 +45,12 @@
 					background-size: contain;
 					transform: scale(1.1);
 				}
+
+				.light_bg {
+					display: block;
+					object-fit: cover;
+					animation: fade_in_out 0.5s ease-in-out;
+				}
 			}
 
 			.img_container {
@@ -44,7 +59,12 @@
 				background: url('../../assets/LogoGray.png');
 				background-repeat: no-repeat;
 				background-size: contain;
-				transition: all 0.2s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			.light_bg {
+				display: none;
+				position: absolute;
+				top: 0;
 			}
 		}
 	}
