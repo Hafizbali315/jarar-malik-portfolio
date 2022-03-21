@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link, animateScroll } from 'react-scroll'
 
 import LogoWhite from '../assets/LogoWhite.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -21,32 +22,50 @@ const Navbar = () => {
 		return () => window.removeEventListener('scroll', listenScrollEvent)
 	}, [])
 
+	const scrollToTop = () => {
+		animateScroll.scrollToTop({ duration: 500, smooth: true })
+	}
+
 	return (
 		<div className={`navbar ${navbarBg}`}>
 			<div className="container">
 				<div className="content">
 					<ul className="lg_page_links">
 						<div className="logo">
-							<a href="#header">
+							<a
+								className="link"
+								onClick={() => {
+									scrollToTop()
+								}}
+								href="#header"
+							>
 								<img src={LogoWhite} alt="logo" />
 							</a>
 						</div>
 
 						<li>
-							<a href="#about">about</a>
+							<Link className="link" to="about" smooth={true} duration={500} delay={0}>
+								about
+							</Link>
 						</li>
 						<li>
-							<a href="#projects">projects</a>
+							<Link className="link" to="projects" smooth={true} duration={500} delay={0}>
+								projects
+							</Link>
 						</li>
 						<li>
-							<a href="#clients">clients</a>
+							<Link className="link" to="clients" smooth={true} duration={500} delay={0}>
+								clients
+							</Link>
 						</li>
 						<li>
-							<a href="#contact">contact</a>
+							<Link className="link" to="contact" smooth={true} duration={500} delay={0}>
+								contact
+							</Link>
 						</li>
 
 						<li>
-							<a href="https://www.behance.net/Jararjerry51ba" target="_blank" rel="noreferrer">
+							<a className="link" href="https://www.behance.net/Jararjerry51ba" target="_blank" rel="noreferrer">
 								behance
 							</a>
 						</li>
