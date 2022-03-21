@@ -6,6 +6,8 @@ import EularHoverImg from '../assets/EularHoverImg.png'
 import ProjectImg from '../assets/ProjectImg.png'
 import ProjectsRingImg from '../assets/ProjectsRingImg.png'
 
+import ScrollBall from '../assets/ScrollBall.png'
+
 const Projects = () => {
 	const [showProjectDetails, setShowProjectDetails] = useState(false)
 	const [projectDetails, setProjectDetails] = useState()
@@ -83,6 +85,12 @@ const Projects = () => {
 							</div>
 						))}
 					</div>
+
+					<div className="scroll_ball">
+						<img src={ScrollBall} alt="ScrollBall" />
+					</div>
+
+					<div className="br"></div>
 				</div>
 			</div>
 

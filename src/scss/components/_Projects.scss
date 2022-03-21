@@ -50,7 +50,21 @@
 	}
 
 	.content {
-		border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+		position: relative;
+
+		.scroll_ball {
+			position: absolute;
+			bottom: 0;
+			z-index: 100;
+		}
+
+		.br {
+			position: absolute;
+			height: 1px;
+			bottom: 12.5px;
+			background: rgba(255, 255, 255, 0.2);
+			width: 100%;
+		}
 
 		.projects_row {
 			margin-top: 100px;
