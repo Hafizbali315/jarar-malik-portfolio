@@ -1,6 +1,8 @@
 .contact {
 	margin-top: 250px;
 	padding-bottom: 100px;
+	position: relative;
+	z-index: 2;
 
 	.content {
 		display: flex;

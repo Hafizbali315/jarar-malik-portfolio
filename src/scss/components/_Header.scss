@@ -6,6 +6,7 @@
 	align-items: center;
 	padding-top: 100px;
 	overflow-x: hidden;
+	z-index: 3;
 
 	.hero_lg {
 		width: 100%;
@@ -24,7 +25,7 @@
 			}
 
 			.learn_more {
-				z-index: 2;
+				z-index: 3;
 
 				width: 249.52px;
 				height: 80px;
