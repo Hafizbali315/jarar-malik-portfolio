@@ -8,7 +8,7 @@ const Navbar = () => {
 	const [showSidebar, setShowSidebar] = useState()
 	const [navbarBg, setNavbarBg] = useState('')
 
-	const listenScrollEvent = (event) => {
+	const listenScrollEvent = () => {
 		if (window.scrollY < 100) {
 			return setNavbarBg('transparent')
 		} else if (window.scrollY > 100) {
@@ -44,22 +44,22 @@ const Navbar = () => {
 						</div>
 
 						<li>
-							<Link className="link" to="about" smooth={true} duration={500} delay={0}>
+							<Link className="link" to="about" smooth={true} duration={300} delay={0}>
 								about
 							</Link>
 						</li>
 						<li>
-							<Link className="link" to="projects" smooth={true} duration={500} delay={0}>
+							<Link className="link" to="projects" smooth={true} duration={300} delay={0}>
 								projects
 							</Link>
 						</li>
 						<li>
-							<Link className="link" to="clients" smooth={true} duration={500} delay={0}>
+							<Link className="link" to="clients" smooth={true} duration={300} delay={0}>
 								clients
 							</Link>
 						</li>
 						<li>
-							<Link className="link" to="contact" smooth={true} duration={500} delay={0}>
+							<Link className="link" to="contact" smooth={true} duration={300} delay={0}>
 								contact
 							</Link>
 						</li>
